@@ -1,4 +1,5 @@
-#!/usr/bin/with-contenv bashio
+#!/bin/bash
+
 cd
 
 echo '*** Configuring Runner ***'
