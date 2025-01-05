@@ -1,5 +1,5 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
-FROM ghcr.io/home-assistant/amd64-base-ubuntu:20.04
+FROM ubuntu:20.04
 
 # Set S6 wait time
 ENV S6_CMD_WAIT_FOR_SERVICES=1 \
