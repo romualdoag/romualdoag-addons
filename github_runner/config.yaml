@@ -13,7 +13,7 @@ options:
   url: "https://github.com/"
   token: null
 schema:
-  url: "str?"
+  url: url
   token: "str?"
 docker_api: true
 apparmor: false
