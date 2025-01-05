@@ -1,0 +1,17 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Github Runner
+version: "0.0.1"
+slug: githubrunner
+description: Github Runner for Home Assistant
+url: "https://github.com/romualdoag/romualdoag-addons/tree/main/github_runner"
+arch:
+  - amd64
+init: false
+map:
+  - addon_config:rw
+options:
+  url: "https://github.com/"
+  token: null
+schema:
+  message: "str?"
+  token: "str?"

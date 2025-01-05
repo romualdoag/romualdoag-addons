@@ -1,0 +1,8 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+build_from:
+  amd64: "ghcr.io/home-assistant/amd64-base-debian:latest"
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: Github Runner add-on"
+  org.opencontainers.image.description: "This add-on allows your Home Assistant instance to function as a GitHub Actions runner, enabling you to execute CI/CD workflows directly in your Home Assistant environment."
+  org.opencontainers.image.source: "https://github.com/romualdoag/romualdoag-addons"
+  org.opencontainers.image.licenses: "Apache License 2.0"
