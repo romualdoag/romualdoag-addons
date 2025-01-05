@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Github Runner
-version: "0.0.4"
+version: "0.0.5"
 slug: githubrunner
 description: Github Runner for Home Assistant
 url: "https://github.com/romualdoag/romualdoag-addons/tree/main/github_runner"

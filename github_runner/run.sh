@@ -1,17 +1,24 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -e
 
+CONFIG_PATH=/data/options.json
+
+URL=$(jq --raw-output '.url // empty' $CONFIG_PATH)
+TOKEN=$(jq --raw-output '.token // empty' $CONFIG_PATH)
+
+echo "${USERNAME}"
 cd
 
 echo '*** Configuring Runner ***'
 ./config.sh \
     --unattended \
-    --url "$(bashio::config 'url')" \
-    --token "$(bashio::config 'token')" \
+    --url "$URL" \
+    --token "$TOKEN" \
     --labels homeassistant 
 
 cleanup () {
   echo '*** Removing Runner ***'
-  ./config.sh remove --unattended --token "$(bashio::config 'token')"
+  ./config.sh remove --unattended --token "$TOKEN"
 }
 
 trap 'cleanup' EXIT
