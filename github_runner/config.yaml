@@ -16,3 +16,5 @@ schema:
   message: "str?"
   token: "str?"
 docker_api: true
+apparmor: false
+advanced: true
