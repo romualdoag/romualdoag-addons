@@ -6,7 +6,6 @@ CONFIG_PATH=/data/options.json
 URL=$(jq --raw-output '.url // empty' $CONFIG_PATH)
 TOKEN=$(jq --raw-output '.token // empty' $CONFIG_PATH)
 
-echo "${USERNAME}"
 cd
 
 echo '*** Configuring Runner ***'
